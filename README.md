@@ -47,6 +47,5 @@ Los casos que requieren intervención humana se derivan mediante una notificaci�
 
 ### 8. Archivos y evidencias
 
-
-- Workflow exportado de n8n: `SIA - Soporte Inteligente de Administración - M1`.
+- Workflow exportado de n8n: `SIA - Soporte Inteligente de Administración - M1(checkpoint1_MariadelosAngeles_Gonzalez)`.
 - Capturas de configuración y pruebas: carpeta `evidencias/`.
