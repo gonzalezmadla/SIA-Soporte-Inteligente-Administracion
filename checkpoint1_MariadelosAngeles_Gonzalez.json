@@ -10,7 +10,7 @@
           "maxIterations": 6
         }
       },
-      "id": "e82ec02a-1222-46e6-8acd-16f4c39ddb41",
+      "id": "e82xxxxa-1222-46e6xxxcd-16f4c39ddb41",
       "name": "AI Agent (Tools Agent)",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 3.1,
@@ -25,7 +25,7 @@
         "sessionKey": "={{ $('01 - Chat Trigger | Entrada SIA').item.json.sessionId }}",
         "contextWindowLength": 10
       },
-      "id": "869593ee-25f1-410d-8efc-e19f080bf402",
+      "id": "86x3ee-25f1-410d-8exc-e19f080xxxx02",
       "name": "Simple Memory",
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.4,
@@ -44,7 +44,7 @@
           "appendAttribution": false
         }
       },
-      "id": "b76e6fc5-10fb-48dc-8683-6c003794a1aa",
+      "id": "b76e6xxxx-10fb-48dc-8683-6cxxxx4a1aa",
       "name": "log_observabilidad",
       "type": "n8n-nodes-base.gmail",
       "typeVersion": 2.2,
@@ -52,7 +52,7 @@
         1824,
         784
       ],
-      "webhookId": "bee4d0d8-3df7-4078-9a40-4fbbe924fb76",
+      "webhookId": "bee4xxxx8-3df7-4078-9a40-4fbbexfb76",
       "credentials": {
         "gmailOAuth2": {
           "id": "xfPF7YCuWSQ8KFIQ",
@@ -74,7 +74,7 @@
         },
         "options": {}
       },
-      "id": "729a071b-5530-4d69-99f5-d4e0e4a1a2d1",
+      "id": "729xb-5530-4d69-9xf5-d4e0xxxxxxxxx2d1",
       "name": "Respuesta al chat",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -89,7 +89,7 @@
           "responseMode": "lastNode"
         }
       },
-      "id": "fb609cb3-a969-4021-a830-d022d1f676e0",
+      "id": "fbx3-a969-4xxxxxx1-a830-d02xxxxxxx76e0",
       "name": "01 - Chat Trigger | Entrada SIA",
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
       "typeVersion": 1.4,
@@ -97,7 +97,7 @@
         1040,
         912
       ],
-      "webhookId": "e0a4abc9-48fe-4db1-a10c-83795af0bc03"
+      "webhookId": "e0a4xxxxxxxxx9-48fe-4db1-a10c-83795af0bc03"
     },
     {
       "parameters": {
@@ -110,7 +110,7 @@
         1120,
         1120
       ],
-      "id": "cf1f30e9-bbcd-4bbf-a7a9-9392fc1668ad",
+      "id": "cf1f30e9-bbcd-xbf-a7a9-93xxxxx68ad",
       "name": "Groq Chat Model",
       "credentials": {
         "groqApi": {
@@ -130,7 +130,7 @@
           },
           "conditions": [
             {
-              "id": "b2bcac05-7bc8-44d6-9d89-42d672c417f8",
+              "id": "b2bcac05-7bc8-44xxx6-9d89-4xxc417f8",
               "leftValue": "={{ ($json.output || '').includes('ESTADO: INCONSISTENCIA') || ($json.output || '').includes('ESTADO: ESCALADO') }}",
               "rightValue": "",
               "operator": {
@@ -144,7 +144,7 @@
         },
         "options": {}
       },
-      "id": "88055ada-d4c2-409b-bfef-7ecaa457ae9c",
+      "id": "88055ada-d4xx-409x-bfef-7xxxxa457ae9c",
       "name": "IF - Requiere supervision humana",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
@@ -159,17 +159,17 @@
         "toolDescription": "Consulta esta herramienta cuando el usuario solicite información sobre una factura recibida y proporcione su numero de identificacion. Debes utilizarla siempre que necesites verificar datos de una factura, incluyendo proveedor, importe, fecha de emision, vencimiento, estado administrativo, estado de pago, importe pagado o saldo pendiente.\n\nEl parametro obligatorio es numero_factura y debe contener el identificador exacto proporcionado por el usuario. La herramienta busca coincidencias en la columna numero_factura de la pestaña Consulta_Facturas de Google Sheets.\n\nUtiliza los resultados obtenidos como fuente de evidencia para responder. Si no encontras coincidencias, informa que no se encontro el registro en la fuente consultada, sin afirmar que la factura no existe en la empresa.\n\nEsta herramienta es exclusivamente de consulta y solo lectura. No esta autorizada para crear, modificar ni eliminar registros, aprobar facturas, autorizar pagos o ejecutar operaciones financieras.\n\nActivala autonomamente siempre que la consulta requiera verificar informacion de una factura. No reemplaces la consulta por datos recordados de conversaciones anteriores ni por suposiciones.",
         "documentId": {
           "__rl": true,
-          "value": "1n-xoKzl0drVZz2OuGrhUJ-aJmCi_KM1Yjg69L0qk9W0",
+          "value": "GOOGLE_SHEET_ID_REDACTED",
           "mode": "list",
           "cachedResultName": "SIA_Dataset_Empresa_Demo",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1n-xoKzl0drVZz2OuGrhUJ-aJmCi_KM1Yjg69L0qk9W0/edit?usp=drivesdk"
+          "cachedResultUrl": "REDACTED"
         },
         "sheetName": {
           "__rl": true,
           "value": "gid=0",
           "mode": "list",
           "cachedResultName": "Consulta_Facturas",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1n-xoKzl0drVZz2OuGrhUJ-aJmCi_KM1Yjg69L0qk9W0/edit#gid=0"
+          "cachedResultUrl": "REDACTED"
         },
         "filtersUI": {
           "values": [
@@ -187,11 +187,11 @@
         1472,
         1120
       ],
-      "id": "a38a2e60-3650-45e1-a6cd-3b5be1d4ae9d",
+      "id": "a38axxxxx-3650-45e1-a6cdxxxe1d4ax9d",
       "name": "consulta nro factura",
       "credentials": {
         "googleSheetsOAuth2Api": {
-          "id": "JYZVgMFIKUnKVlBy",
+          "id": "JYZVgxxxxKUnKVlBy",
           "name": "Google Sheets account"
         }
       }
@@ -289,12 +289,12 @@
     "executionOrder": "v1",
     "binaryMode": "separate"
   },
-  "versionId": "8fe0c4af-3448-41f1-b70f-d85418ecd8e2",
+  "versionId": "8fxx4af-3448-4xf1-bx0f-d8541xxd8e2",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "0760675bb2622f3cb7bd7c0e20418197af0ca43f00389aeff92be0f22c174df4"
+    "instanceId": "0760675bb262xxxd7c0e2041x7af0ca43f00389xxxxe0f22c174df4"
   },
   "nodeGroups": [],
-  "id": "daCJ8OzgYZNv2pWg",
+  "id": "daCJ8Ozxxxv2pWg",
   "tags": []
 }
